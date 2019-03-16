@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Patryk Zwolak - Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="High motivation, achievement of goals and constant desire to develop are the main ideas in my professional life." />
+  <meta name="keywords" content="programmer, HTML, CSS, JavaScript, photo editing, photoshop, retouch" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function() { 
+
+	$('a[href^="#"]').on('click', function(event) {
+	
+		var target = $( $(this).attr('href') );
+	
+		if( target.length ) {
+			event.preventDefault();
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 1000);
+		}
+	});
+
+});
+</script>
+
+
+</head>
+
+<body>
+  <header>
+    <div class="hi">
+      <p>hello!</p>
+      <h1>i'm patryk zwolak</h1>
+      <h2>web developer - freelancer</h2>
+      <a href="#down"><button>My portfolio</button></a>
+    </div>
+    <img src="img/about-me3.png" alt="Picture Patryk Zwolak">
+  </header>
+  <section class="create clearfix">
+    <a id="down">
+      <h1>I make modern, transparent websites</h1>
+    </a>
+    <div class="createe">
+      <img src="img/html-css-js.png" alt="HTML CSS JS PHP WORDPRESS TECHNOLOGIES">
+      <h2>Made in contemporary technologies and standards</h2>
+      <p class="description">Depending on the client's needs, I can create websites based on wordpress, HTML / CSS,
+        JavaScript and PHP.</p>
+    </div>
+    <div class="createe">
+      <img src="img/graphic2.png" alt="LOGOS BANNERS LEAFLETS">
+      <h2>Professional creation of graphics and logos</h2>
+      <p class="description">Each modern website must contain designer and optimized graphics that I also do.</p>
+    </div>
+    <div class="createe">
+      <img src="img/responsive.png" alt="RESPONSIVE AND INTUITIVE">
+      <h2>Clear and intuitive on any devices</h2>
+      <p class="description">Responsive and intuitive websites that look great on all devices.</p>
+    </div>
+  </section>
+  <section class="projects">
+    <h1>My successful projects</h1>
+    <div class="project clearfix">
+      <div class="pic">
+        <img src="img/rpi.jpg" alt="Raspberry Pi Project">
+      </div>
+      <div class="about">
+        <h2>Raspberry pi project</h2>
+        <p>In order to carry out the engineering work I have independently developed, built and implemented a system
+          that extracts and analyzes atmospheric conditions. Components used: Raspberry Pi 3, DHT21, BMP180, and BH1750
+          sensors. Used technologies: Python, PHP, MySQL, HTML, JavaScript, chart.js. Website project: <a href="http://student.agh.edu.pl/~pzwolak/wyniki.php">CLICK</a>.</p>
+      </div>
+    </div>
+    <div class="project clearfix">
+      <div class="pic">
+        <img src="img/project2.jpg" alt="Websites projects">
+      </div>
+      <div class="about">
+        <h2>websites projects</h2>
+        <p>As part of volunteering, I created a website using the wordpress tool: <a href="http://www.przystanmedyczna.org">Przystań
+            medyczna</a><br><br>Last portfolio: <a href="http://www.patryk-zwolak.com">Patryk Zwolak - Portfolio v2</a><br><br>Creating
+          this website and another: <a href="http://www.patryk-zwolak.pl">Patryk Zwolak - Portfolio</a> </p>
+      </div>
+    </div>
+    <div class="project clearfix">
+      <div class="pic">
+        <img src="img/gallery2.jpg" alt="Gallery Projects">
+      </div>
+      <div class="about">
+        <h2>Graphic Projects</h2>
+        <p>You will find here a list of randomly selected graphic works from retouching, effects, image enhancement to
+          creating offers, banners, leaflets. I invite you to watch: <a href="http://www.patryk-zwolak.com/gallery.html">
+            Gallery</a></p>
+      </div>
+    </div>
+    <div class="project clearfix">
+      <div class="pic">
+        <img src="img/freelance2.jpg" alt="Freelance">
+      </div>
+      <div class="about">
+        <h2>Freelance</h2>
+        <p>I am happy to deal with additional orders such as creating websites, portfolios such as this,
+          graphics (photo processing, creating banners, leaflets and offers), PC service (diagnostics, maintenance,
+          minor repairs).</p>
+      </div>
+    </div>
+  </section>
+  <section class="motto">
+    <div class="bg">
+      <h1>My life motto</h1>
+      <p class="text">I follow three rules: Do the right thing, do the best you can, and always show people you care.
+      </p>
+      <p class="author">Lou Holtz</p>
+    </div>
+  </section>
+  <section class="hobby clearfix">
+    <h1>In my free time</h1>
+    <div class="item">
+      <p>Be active</p>
+    </div>
+    <div class="item">
+      <p>Spend time with family</p>
+    </div>
+    <div class="item">
+      <p>Constantly develop</p>
+    </div>
+    <div class="item">
+      <p>Achieve goals</p>
+    </div>
+  </section>
+  <section class="contact">
+    <h1>Contact me</h1>
+    <div class="wrap clearfix">
+
+
+      <form method="post" name="contactform" action="mail.php">
+        <input type="text" name="name" id="name" required placeholder="Full name">
+        <input type="email" name="email" id="email" required placeholder="Email">
+        <textarea name="message" id="message" required placeholder="Your message"></textarea>
+        <button type="submit" name="submit">Send message</button>
+      </form>
+
+
+      <div class="socials">
+        <div class="social clearfix"><img src="img/email.png" alt="contact - email"><a href="mailto:p.zwolak.93@gmail.com"><span>p.zwolak.93@gmail.com</span></a></div>
+        <div class="social clearfix"><img src="img/phone2.png" alt="contact - phone"><a href="tel:+48798630903"><span>+48
+              798 630 903</span></a></div>
+        <div class="social clearfix"><img src="img/phone.png" alt="contact - phone"><a href="tel:+447432621302"><span>+44
+              7432 621 302</span></a></div>
+        <div class="social clearfix"><img src="img/fb.png" alt="contact - fb"><a href="https://www.facebook.com/patryk.zwolak.58"><span>Patryk
+              Zwolak - FB</span></a></div>
+        <div class="social clearfix"><img src="img/li.png" alt="contact - linkedin"><a href="https://www.linkedin.com/in/patryk-zwolak-5960a8164/"><span>Patryk
+              Zwolak - IN</span></a></div>
+
+      </div>
+    </div>
+  </section>
+  <footer>&copy; 2018 - Patryk Zwolak</footer>
+</body>
+
+</html>
